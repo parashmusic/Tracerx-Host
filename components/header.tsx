@@ -1,23 +1,23 @@
-"use client"
+"use client";
 
-import { motion, AnimatePresence } from "framer-motion"
-import { useEffect, useState } from "react"
-import Link from "next/link"
-import { Menu, X } from "lucide-react"
-
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  const navigationItems = ["Features", "Use Cases", "Pricing"]
+  const navigationItems = ["Features", "Use Cases", "Pricing"];
 
   return (
     <>
@@ -40,13 +40,21 @@ export default function Header() {
           >
             <Link href="/" className="flex items-center gap-2">
               <motion.div
-                whileHover={{ scale: 1.05, rotate: 5 }}
+                whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-400 to-indigo-800 flex items-center justify-center"
+                className="w-8 h-8 rounded-lg flex items-center justify-center"
               >
-                <span className="text-white font-bold text-sm">TX</span>
+                <Image
+                  src="/ticon4.png"
+                  alt="TracerX Logo"
+                  width={32}
+                  height={32}
+                  className="w-full h-full object-contain"
+                />
               </motion.div>
-              <span className="text-white font-semibold text-lg tracking-tight">TracerX</span>
+              <span className="text-white font-semibold text-lg tracking-tight">
+                TracerX
+              </span>
             </Link>
           </motion.div>
 
@@ -88,7 +96,10 @@ export default function Header() {
             </Link>
             <Link href="/get-started">
               <motion.button
-                whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(34, 211, 238, 0.3)" }}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 0 20px rgba(34, 211, 238, 0.3)",
+                }}
                 whileTap={{ scale: 0.95 }}
                 className="px-5 py-2.5 rounded-lg bg-white text-black text-sm font-semibold hover:bg-gray-100 transition-all duration-200"
               >
@@ -122,7 +133,7 @@ export default function Header() {
               className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 md:hidden"
               onClick={() => setIsMobileMenuOpen(false)}
             />
-            
+
             {/* Mobile Menu Panel */}
             <motion.div
               initial={{ opacity: 0, x: "100%" }}
@@ -135,10 +146,12 @@ export default function Header() {
                 {/* Header */}
                 <div className="flex items-center justify-between p-6 border-b border-white/10">
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-400 to-indigo-800 flex items-center justify-center">
+                    {/* <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-400 to-indigo-800 flex items-center justify-center">
                       <span className="text-white font-bold text-sm">TX</span>
-                    </div>
-                    <span className="text-white font-semibold text-lg">TracerX</span>
+                    </div> */}
+                    <span className="text-white font-semibold text-lg">
+                      TracerX
+                    </span>
                   </div>
                   <button
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -194,5 +207,5 @@ export default function Header() {
         )}
       </AnimatePresence>
     </>
-  )
+  );
 }
