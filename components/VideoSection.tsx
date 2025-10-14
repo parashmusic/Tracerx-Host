@@ -62,6 +62,7 @@ export default function VideoSection() {
   return (
     <section 
       ref={sectionRef} 
+      id='demo'
       className="relative w-full h-screen overflow-hidden bg-black"
     >
       {/* Video Background */}
@@ -100,7 +101,7 @@ export default function VideoSection() {
               className="inline-flex items-center px-4 md:px-6 py-2 md:py-3 bg-white/10 border border-white/20 rounded-full text-xs md:text-sm text-white backdrop-blur-xl"
             >
               <div className="w-2 h-2 bg-white rounded-full mr-2 md:mr-3 animate-pulse"></div>
-              Experience the Future
+              Freelance Simplified
             </motion.div>
 
             {/* <motion.h2 

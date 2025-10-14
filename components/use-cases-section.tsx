@@ -12,14 +12,14 @@ const useCases = [
     title: "Freelancers",
     description:
       "Juggling multiple clients and deadlines? Get quick insights into project status and cash flow without the complexity.",
-    stat: "10,000+",
+    stat: "100+",
     label: "Active freelancers",
   },
   {
     title: "Creative Teams",
     description:
       "Collaborate remotely with shared task boards, status updates, and comment threads that keep everyone in sync.",
-    stat: "2,500+",
+    stat: "250+",
     label: "Teams using TracerX",
   },
   {
@@ -95,7 +95,7 @@ export default function UseCasesSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="p-8 rounded-xl bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-white/20 transition-all duration-300 group"
+              className="p-8 rounded-sm bg-white/5 border border-white/10 hover:bg-white/[0.07] hover:border-white/20 transition-all duration-300 group"
             >
               <div className="mb-6">
                 <div

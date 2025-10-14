@@ -6,7 +6,7 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Aurora from "./ui/Aurora"
 import GradientButton from "./ui/GradientButton"
-
+import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger)
 
 export default function HeroSection() {
@@ -67,9 +67,9 @@ export default function HeroSection() {
             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
             className="w-2 h-2 rounded-full bg-emerald-400"
           />
-          <span className="text-sm text-gray-400">New: Real-time collaboration</span>
+          <span className="text-sm text-gray-400">New:Try Beta Version Now</span>
           <motion.a
-            href="#"
+            href="#cta"
             whileHover={{ x: 3 }}
             className="text-sm text-cyan-400 font-medium hover:text-cyan-300 transition-colors"
           >
@@ -104,9 +104,12 @@ export default function HeroSection() {
           >
             Start free trial
           </motion.button> */}
+          <Link href="/get-started" >
           <GradientButton>
             Start Your Trial
           </GradientButton>
+          </Link>
+          <a href="#demo">
           <motion.button
             whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
             whileTap={{ scale: 0.95 }}
@@ -114,6 +117,7 @@ export default function HeroSection() {
           >
             View demo
           </motion.button>
+            </a>
         </motion.div>
 
         <motion.p
@@ -122,7 +126,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 1 }}
           className="text-sm text-gray-500"
         >
-          Trusted by over 10,000 freelancers and creative teams worldwide
+           a clear overview of your work, tracks your progress, and helps you stay on top of your earnings
         </motion.p>
       </div>
 
