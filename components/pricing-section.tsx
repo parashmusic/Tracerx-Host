@@ -159,15 +159,38 @@ export default function PricingSection() {
               <p className="mt-6 text-xs text-muted-foreground/80">{plan.subtext}</p>
 
               <div className="mt-7">
-                
-                <Button
-                  className="w-full"
-                  variant={plan.highlight ? "default" : "secondary"}
-                  disabled={plan.comingSoon}
-                  aria-disabled={plan.comingSoon}
-                >
-                  {plan.cta}
-                </Button>
+                {plan.cta === "Download" ? (
+                  <a href="https://ci8s32kwmemcidsp.public.blob.vercel-storage.com/tracerx.apk" download>
+                    <Button
+                      className="w-full"
+                      variant={plan.highlight ? "default" : "secondary"}
+                      disabled={plan.comingSoon}
+                      aria-disabled={plan.comingSoon}
+                    >
+                      {plan.cta}
+                    </Button>
+                  </a>
+                ) : plan.cta === "Contact sales" ? (
+                  <a href="mailto:tracerxinfo@gmail.com">
+                    <Button
+                      className="w-full"
+                      variant={plan.highlight ? "default" : "secondary"}
+                      disabled={plan.comingSoon}
+                      aria-disabled={plan.comingSoon}
+                    >
+                      {plan.cta}
+                    </Button>
+                  </a>
+                ) : (
+                  <Button
+                    className="w-full"
+                    variant={plan.highlight ? "default" : "secondary"}
+                    disabled={plan.comingSoon}
+                    aria-disabled={plan.comingSoon}
+                  >
+                    {plan.cta}
+                  </Button>
+                )}
               </div>
             </motion.article>
           ))}

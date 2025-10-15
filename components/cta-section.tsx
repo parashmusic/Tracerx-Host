@@ -35,14 +35,14 @@ export default function CTASection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         > <a href="https://ci8s32kwmemcidsp.public.blob.vercel-storage.com/tracerx.apk" download>
-          <motion.button
-            whileHover={{ scale: 1.05, boxShadow: "0 10px 40px rgba(255, 255, 255, 0.2)" }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 rounded-lg bg-white text-black text-base font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg shadow-white/10"
-          >
-            Download Beta
-          </motion.button>
-         </a>
+            <motion.button
+              whileHover={{ scale: 1.05, boxShadow: "0 10px 40px rgba(255, 255, 255, 0.2)" }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 rounded-lg bg-white text-black text-base font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg shadow-white/10"
+            >
+              Download Beta
+            </motion.button>
+          </a>
         </motion.div>
       </div>
     </section>

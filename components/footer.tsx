@@ -114,28 +114,28 @@ export default function Footer() {
         <div className="flex justify-start mb-12">
           <div className="flex gap-4">
             <a
-              href="https://instagram.com/tracerx"
+              href="https://instagram.com/parash.wav"
               aria-label="Instagram"
               className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
             >
               <Instagram className="w-5 h-5" />
             </a>
             <a
-              href="https://facebook.com/tracerx"
+              href="https://facebook.com/parashdas"
               aria-label="Facebook"
               className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
             >
               <Facebook className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/company/tracerx"
+              href="https://linkedin.com/company/parashmonidas"
               aria-label="LinkedIn"
               className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="https://twitter.com/tracerx"
+              href="https://twitter.com/parashmusic"
               aria-label="Twitter"
               className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
             >

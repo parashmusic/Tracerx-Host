@@ -8,7 +8,7 @@ import CTASection from "@/components/cta-section"
 import Footer from "@/components/footer"
 import VideoSection from "@/components/VideoSection"
 import PricingSection from "@/components/pricing-section"
-
+import ContactSection from "@/components/contact-section"
 export default function TracerXLanding() {
   return (
     <div className="min-h-screen bg-background">
@@ -18,6 +18,7 @@ export default function TracerXLanding() {
       <FeaturesSection />
       <UseCasesSection />
        <PricingSection />
+        <ContactSection />
       <CTASection />
       <Footer />
     </div>
