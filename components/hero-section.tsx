@@ -104,11 +104,13 @@ export default function HeroSection() {
           >
             Start free trial
           </motion.button> */}
-          <Link href="/get-started" >
+          <a href="https://ci8s32kwmemcidsp.public.blob.vercel-storage.com/tracerx.apk" download>
           <GradientButton>
             Start Your Trial
           </GradientButton>
-          </Link>
+          </a>
+         
+          
           <a href="#demo">
           <motion.button
             whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.1)" }}

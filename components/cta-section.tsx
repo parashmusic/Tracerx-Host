@@ -34,7 +34,7 @@ export default function CTASection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
+        > <a href="https://ci8s32kwmemcidsp.public.blob.vercel-storage.com/tracerx.apk" download>
           <motion.button
             whileHover={{ scale: 1.05, boxShadow: "0 10px 40px rgba(255, 255, 255, 0.2)" }}
             whileTap={{ scale: 0.95 }}
@@ -42,6 +42,7 @@ export default function CTASection() {
           >
             Download Beta
           </motion.button>
+         </a>
         </motion.div>
       </div>
     </section>

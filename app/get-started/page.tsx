@@ -26,10 +26,10 @@ export default function GetStartedPage() {
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center px-4 relative overflow-hidden">
       {/* Background grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      {/* <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" /> */}
 
       {/* Gradient orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
 
       <div className="relative z-10 w-full max-w-md">
@@ -64,7 +64,7 @@ export default function GetStartedPage() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center mb-6"
+                className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center mb-6"
               >
                 <span className="text-black font-bold text-lg">TX</span>
               </motion.div>
@@ -88,6 +88,24 @@ export default function GetStartedPage() {
               </motion.p>
             </div>
 
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.45 }}
+              className="mb-8 p-4 rounded-xl bg-gradient-to-r from-emerald-500/10 to-blue-500/10 border border-emerald-500/30 flex items-start gap-3"
+            >
+              <div className="w-5 h-5 rounded-full bg-emerald-500/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span className="text-emerald-400 text-xs font-bold">✓</span>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-emerald-300 mb-1">Early Access Benefit</p>
+                <p className="text-xs text-gray-300 leading-relaxed">
+                  Register today and unlock an exclusive free trial of TracerX Pro. Experience all premium features at
+                  no cost during our early access period.
+                </p>
+              </div>
+            </motion.div>
+
             {/* Form */}
             <motion.form
               initial={{ opacity: 0, y: 10 }}
@@ -109,7 +127,7 @@ export default function GetStartedPage() {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                     placeholder="you@example.com"
-                    className="w-full pl-12 pr-4 py-3.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500/50 transition-all duration-200"
+                    className="w-full pl-12 pr-4 py-3.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500/50 transition-all duration-200"
                   />
                 </div>
               </div>
@@ -160,9 +178,9 @@ export default function GetStartedPage() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ type: "spring", stiffness: 200, damping: 15, delay: 0.2 }}
-              className="w-16 h-16 rounded-full bg-cyan-500/20 flex items-center justify-center mx-auto mb-6"
+              className="w-16 h-16 rounded-full bg-emerald-500/20 flex items-center justify-center mx-auto mb-6"
             >
-              <CheckCircle2 className="w-8 h-8 text-cyan-400" />
+              <CheckCircle2 className="w-8 h-8 text-emerald-400" />
             </motion.div>
 
             <motion.h2

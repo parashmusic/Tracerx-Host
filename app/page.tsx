@@ -7,7 +7,7 @@ import UseCasesSection from "@/components/use-cases-section"
 import CTASection from "@/components/cta-section"
 import Footer from "@/components/footer"
 import VideoSection from "@/components/VideoSection"
-
+import PricingSection from "@/components/pricing-section"
 
 export default function TracerXLanding() {
   return (
@@ -17,6 +17,7 @@ export default function TracerXLanding() {
      <VideoSection/>
       <FeaturesSection />
       <UseCasesSection />
+       <PricingSection />
       <CTASection />
       <Footer />
     </div>

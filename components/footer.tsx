@@ -13,6 +13,7 @@ export default function Footer() {
               Plan, manage and get paid on your projects with our comprehensive freelancer toolkit designed to support
               your business growth.
             </p>
+            <p className="text-gray-400 mt-2 text-sm">Designed and developed by ©<a href="https://codebyparash.vercel.app/">Parash.</a> </p>
           </div>
 
           {/* Navigation Links */}
@@ -157,10 +158,11 @@ export default function Footer() {
             <a href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
               Terms of Service
             </a>
-            <a href="/cookies" className="text-gray-400 hover:text-white text-sm transition-colors">
+            {/* <a href="/cookies" className="text-gray-400 hover:text-white text-sm transition-colors">
               Cookie Policy
-            </a>
+            </a> */}
           </div>
+           
           <p className="text-gray-400 text-sm">© {new Date().getFullYear()} TracerX. All rights reserved.</p>
         </div>
       </div>
