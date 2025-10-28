@@ -63,7 +63,7 @@ export default function ShowcaseSection() {
   }, []);
 
   return (
-    <section id="use-cases" ref={sectionRef} className="py-0 md:py-0 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
+    <section id="use-cases" ref={sectionRef} className="pb-10 md:pb-10 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-12 md:mb-4">
           <motion.div
@@ -291,17 +291,16 @@ export default function ShowcaseSection() {
           className="lg:col-span-5 space-y-4 sm:space-y-6 md:space-y-8 text-center lg:text-left order-2 lg:order-1"
         >
           <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-white">
-            Data-driven insights
+            Efficient Task Handling
           </h3>
           <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed font-light">
-            Understand your productivity patterns and optimize your workflow for maximum efficiency.
-          </p>
+Stay on top of every deadline with intelligent task tracking and progress updates, all beautifully visualized to keep your team aligned</p>
           
           <div className="space-y-3 sm:space-y-4">
             {[
-              { label: 'Productivity Score', value: '94%' },
-              { label: 'Projects Completed', value: '23' },
-              { label: 'Average Delivery', value: '2.3 days early' }
+              { label: 'Active Tasks', value: '42' },
+              { label: 'Completed This Week', value: '27' },
+              { label: 'Avg. Completion Rate', value: '92%' }
             ].map((stat, index) => (
               <div key={index} className="flex justify-between items-center py-1 sm:py-2 md:py-3 border-b border-white/10">
                 <span className="text-gray-300 font-light text-xs sm:text-sm md:text-base truncate max-w-[120px] sm:max-w-none">{stat.label}</span>
@@ -359,16 +358,15 @@ export default function ShowcaseSection() {
           className="lg:col-span-5 space-y-4 sm:space-y-6 md:space-y-8 text-center lg:text-left order-2 lg:order-1"
         >
           <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-white">
-            Seamless collaboration
+            Simplify Your Finances
           </h3>
           <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed font-light">
-            Keep clients in the loop with task comments, project updates, and shared timelines.
-          </p>
+Gain full visibility into your payments, invoices, and revenue, all tracked in real-time so you never miss a transaction          </p>
           
           <div className="space-y-2 sm:space-y-3 md:space-y-4">
-            {[
-              { time: '2 hours ago', message: 'Homepage design approved by client' },
-              { time: '1 day ago', message: 'Mobile responsive version completed' }
+                        {[
+              { time: 'Just now', message: 'Payment received from Acme Corp – ₹35,000' },
+              { time: '3 hours ago', message: 'Invoice sent to Design Studio – ₹75,000' }
             ].map((update, index) => (
               <div key={index} className="p-2 sm:p-3 md:p-4 bg-white/5 rounded-lg sm:rounded-xl md:rounded-2xl border border-white/10 backdrop-blur-xl">
                 <div className="text-xs sm:text-sm text-gray-400 font-light mb-1 sm:mb-2">{update.time}</div>
