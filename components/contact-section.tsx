@@ -115,7 +115,7 @@ export default function ContactSection() {
                   className="w-full rounded-md border border-border/60 bg-background/40 px-3 py-2 text-xs font-medium text-foreground/90 transition-colors hover:bg-background flex items-center justify-between"
                   aria-label="Copy feedback email"
                 >
-                  <span>feedback@tracerx.app</span>
+                  <span>tracerxinfo@gmail.com</span>
                   <span className="text-xs">{copied === "feedback" ? "✓" : "Copy"}</span>
                 </button>
               </div>
