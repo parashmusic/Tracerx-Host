@@ -71,7 +71,7 @@ export default function HeroSection() {
           <motion.a
             href="#cta"
             whileHover={{ x: 3 }}
-            className="text-sm text-cyan-400 font-medium hover:text-cyan-300 transition-colors"
+            className="text-sm text-emerald-400 font-medium hover:text-emerald-300 transition-colors"
           >
             Learn more →
           </motion.a>
@@ -111,7 +111,7 @@ export default function HeroSection() {
           </a>
          
           
-          <a href="#demo">
+          <a href="#use-cases">
           <motion.button
             whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
             whileTap={{ scale: 0.95 }}

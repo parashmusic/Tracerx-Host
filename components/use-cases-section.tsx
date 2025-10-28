@@ -60,7 +60,7 @@ export default function UseCasesSection() {
   }, [])
 
   return (
-    <section id="use-cases" className="py-32 px-6 relative">
+    <section  className="py-32 px-6 relative">
       {/* Subtle divider line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 

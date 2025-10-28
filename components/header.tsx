@@ -17,7 +17,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navigationItems = ["Features", "Use Cases", "Pricing"];
+  const navigationItems = ["Features", "Guide", "Pricing"];
 
   return (
     <>
@@ -71,7 +71,7 @@ export default function Header() {
                 href={`#${item.toLowerCase().replace(" ", "-")}`}
                 whileHover={{ y: -2 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className="text-white hover:text-indigo-500 text-sm font-medium transition-colors duration-200"
+                className="text-white hover:text-emerald-500 text-sm font-medium transition-colors duration-200"
               >
                 {item}
               </motion.a>
@@ -113,7 +113,7 @@ export default function Header() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3, delay: 0.4 }}
-            className="md:hidden p-2 text-white hover:text-indigo-400 transition-colors"
+            className="md:hidden p-2 text-white hover:text-emerald-400 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
