@@ -203,8 +203,8 @@ export default function PricingSection() {
       </div>
 
       {/* Subtle top border and vignette */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-border/60 to-transparent" />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(50%_40%_at_50%_0%,theme(colors.primary/6),transparent)]" />
+      {/* <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-border/60 to-transparent" /> */}
+      {/* <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(50%_40%_at_50%_0%,theme(colors.primary/6),transparent)]" /> */}
     </section>
   )
 }
